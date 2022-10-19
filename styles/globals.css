@@ -308,7 +308,7 @@ p {
   text-transform: uppercase;
   font-weight: 600;
   background: -webkit-linear-gradient(var(--clr-blue-4), var(--clr-blue-8));
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.1rem;
   line-height: 1.3;

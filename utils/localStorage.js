@@ -11,12 +11,16 @@ export const removeUserFromLocalStorage = (user) => {
 }
 
 export const getUserFromLocalStorage = () => {
-  let result
-  if (typeof window !== "undefined") {
-    result = localStorage.getItem("user")
+  // let result
+  // if (typeof window !== "undefined") {
+  //   result = localStorage.getItem("user")
+  // }
+
+  // const user = result ? JSON.parse(result) : null
+
+  // return user
+  if (typeof localStorage !== "undefined") {
+    return localStorage.getItem("user")
   }
-
-  const user = result ? JSON.parse(result) : null
-
-  return user
+  return null
 }

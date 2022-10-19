@@ -37,3 +37,5 @@ const links = [
 ]
 
 export default links
+
+export const url = "https://ciampelletti-tours.herokuapp.com/api/v1"

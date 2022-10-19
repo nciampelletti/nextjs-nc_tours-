@@ -1,22 +1,24 @@
 import React from "react"
 import styled from "styled-components"
 import Link from "next/link"
-// import { useUserContext } from "../../context/user_context"
 import { image_user_url } from "../../utils/constants"
 
 const NavUsers = () => {
-  // const { user, logout } = useUserContext()
-
+  // console.log(user)
   return (
     <Wrapper>
       <Link href='/login' className='nav__el'>
         LOGIN
+      </Link>
+      <Link href='/signup' className='nav__el nav__el--cta'>
+        Sign Up
       </Link>
       {/* {!user && (
         <Link href='/login' className='nav__el'>
           LOGIN
         </Link>
       )}
+
       {user && (
         <button type='button' className='nav__el' onClick={() => logout()}>
           Logout
@@ -70,5 +72,22 @@ const Wrapper = styled.div`
 
   @media (max-width: 992px) {
     display: none;
+  }
+
+  .nav__el,
+  .nav__el:link,
+  .nav__el:visited {
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s;
+    font-weight: 400;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
 `

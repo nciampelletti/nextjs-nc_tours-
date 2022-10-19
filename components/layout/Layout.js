@@ -27,6 +27,6 @@ const Wrapper = styled.div`
   flex-direction: column;
 
   main {
-    background-color: var(--clr-grey-9);
+    background-color: var(--clr-grey-10);
   }
 `
