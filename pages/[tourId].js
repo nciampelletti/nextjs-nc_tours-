@@ -6,8 +6,8 @@ import TourDescription from "../components/Tour/TourDescription"
 import { formatDateShort } from "../utils/helpers"
 import TourPictures from "../components/Tour/TourPictures"
 import TourReviews from "../components/Tour/TourReviews"
-// import TourMap from "../components/Tour/TourMap"
-
+import TourCta from "../components/Tour/TourCta"
+import { useRouter } from "next/router"
 import Head from "next/head"
 
 const TourDetails = (props) => {
@@ -28,6 +28,8 @@ const TourDetails = (props) => {
   } = props.tour
 
   const { reviews } = props
+  const router = useRouter()
+  const { tourId } = router.query
 
   return (
     <>
@@ -71,6 +73,7 @@ const TourDetails = (props) => {
         )} */}
 
         {reviews && <TourReviews reviews={reviews} />}
+        <TourCta id={tourId} images={images} />
       </Wrapper>
     </>
   )

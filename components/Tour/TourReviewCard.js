@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import defImage from "../../assets/default.jpg"
 import Stars from "../../components/ui/Stars"
 import { urlImage } from "../../utils/constants"
 
@@ -13,9 +12,9 @@ const TourReviewCard = ({ image, name, review, rating }) => {
           src={!image ? "/images/default.jpg" : `${urlImage}/users/${image}`}
           alt={name}
         />
-        <h6 className='reviews__user'>{name}</h6>
+        <h6 className='description__text capitalize'>{name}</h6>
       </div>
-      <p className='reviews__text'>{review}</p>
+      <p className='description__text'>{review}</p>
       <div>
         <Stars stars={rating} />
       </div>
@@ -52,16 +51,11 @@ const Wrapper = styled.div`
     margin-right: 1.25rem;
   }
 
-  .reviews__user {
-    font-size: 1.1rem;
-    font-weight: 500;
+  .capitalize {
     text-transform: uppercase;
   }
 
-  .reviews__text {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+  .description__text {
     font-style: italic;
-    font-weight: 300;
   }
 `

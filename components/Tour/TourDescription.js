@@ -89,7 +89,7 @@ const Wrapper = styled.div`
 
   padding: 0 8vw;
   padding-top: 14vw;
-  padding-bottom: calc(1vw + var(--section-rotate) + 10rem);
+  padding-bottom: calc(1vw + var(--section-rotate) + 0rem);
 
   /* .overview-box {
     background-color: red;

@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   padding: 1rem;
   line-height: 1.6;
   font-weight: 300;
-  color: red; //#777;
+  color: var(--clr-grey-4);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
