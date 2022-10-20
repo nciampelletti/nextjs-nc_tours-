@@ -36,19 +36,19 @@ const Tour = ({
       <div className='card__header'>
         <div className='card__picture'>
           <div className='card__picture-overlay'> </div>
-          {/* <img
+          <img
             src={`${urlImage}/tours/${image}`}
             alt={name}
             className='card__picture-img'
-          /> */}
-          <div className='card__picture-img'>
+          />
+          {/* <div className='card__picture-img'>
             <Image
               src={`${urlImage}/tours/${image}`}
               alt='Any Text'
               width={500}
               height={320}
             />
-          </div>
+          </div> */}
         </div>
 
         <h3 className='heading-tertirary'>
