@@ -7,12 +7,12 @@ const NavUsers = () => {
   // console.log(user)
   return (
     <Wrapper>
-      <Link href='/login' className='nav__el'>
+      {/* <Link href='/login' className='nav__el'>
         LOGIN
       </Link>
       <Link href='/signup' className='nav__el nav__el--cta'>
         Sign Up
-      </Link>
+      </Link> */}
       {/* {!user && (
         <Link href='/login' className='nav__el'>
           LOGIN

@@ -87,7 +87,7 @@ export async function getStaticProps(context) {
   const tourData = await fetchData(`${urlAPI}/tours/${tourId}`)
   const reviewsData = await fetchData(`${urlAPI}/tours/${tourId}/reviews`)
 
-  console.log(reviewsData)
+  //console.log(reviewsData)
   //
   return {
     props: {
