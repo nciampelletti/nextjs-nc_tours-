@@ -13,10 +13,19 @@ const Index = ({ tours }) => {
   )
 }
 
-export async function getStaticProps() {
-  // const response = await axios.get(`${url}/tours`)
-  const data = await fetchData(`${url}/tours`)
+// export async function getStaticProps() {
+//   // const response = await axios.get(`${url}/tours`)
+//   const data = await fetchData(`${url}/tours`)
 
+//   return {
+//     props: {
+//       tours: data,
+//     },
+//   }
+// }
+
+export async function getServerSideProps({ context }) {
+  const data = await fetchData(`${url}/tours`)
   return {
     props: {
       tours: data,

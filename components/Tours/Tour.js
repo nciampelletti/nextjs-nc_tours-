@@ -7,6 +7,7 @@ import TourCardEntry from "../../components/ui/TourCardEntry"
 import Button from "../../components/ui/Button"
 import { urlImage } from "../../utils/constants"
 import { useRouter } from "next/router"
+import Image from "next/image"
 
 const Tour = ({
   id,
@@ -35,11 +36,19 @@ const Tour = ({
       <div className='card__header'>
         <div className='card__picture'>
           <div className='card__picture-overlay'> </div>
-          <img
+          {/* <img
             src={`${urlImage}/tours/${image}`}
             alt={name}
             className='card__picture-img'
-          />
+          /> */}
+          <div className='card__picture-img'>
+            <Image
+              src={`${urlImage}/tours/${image}`}
+              alt='Any Text'
+              width={500}
+              height={320}
+            />
+          </div>
         </div>
 
         <h3 className='heading-tertirary'>
@@ -126,6 +135,7 @@ const Wrapper = styled.div`
     object-fit: cover;
     height: 100%;
     width: 100%;
+    opacity: 0.5;
   }
 
   .card__details {

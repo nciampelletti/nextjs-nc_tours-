@@ -112,6 +112,21 @@ export async function getStaticPaths() {
   }
 }
 
+// This function will be called by the server
+// export async function getServerSideProps({ context }) {
+//   const tourId = context.params.tourId
+//   const tourData = await fetchData(`${urlAPI}/tours/${tourId}`)
+//   const reviewsData = await fetchData(`${urlAPI}/tours/${tourId}/reviews`)
+//   //console.log(reviewsData)
+//   //
+//   return {
+//     props: {
+//       tour: tourData,
+//       reviews: reviewsData,
+//     },
+//   }
+// }
+
 const Wrapper = styled.div`
   background-color: var(--clr-grey-10);
   padding: 0rem 0rem;
