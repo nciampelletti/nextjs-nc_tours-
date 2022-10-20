@@ -28,7 +28,7 @@ export async function getServerSideProps({ context }) {
   const data = await fetchData(`${url}/tours`)
   return {
     props: {
-      tours: data,
+      tours: data.splice(3),
     },
   }
 }
