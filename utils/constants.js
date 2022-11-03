@@ -6,5 +6,6 @@
 // export const image_tour_url =
 //   "https://ciampelletti-tours.herokuapp.com/img/tours/"
 
-export const urlImage = "https://ciampelletti-tours.herokuapp.com/img"
+//export const urlImage = "https://ciampelletti-tours.herokuapp.com/img"
 export const urlAPI = "https://ciampelletti-tours.herokuapp.com/api/v1"
+export const urlImage = "/images"
